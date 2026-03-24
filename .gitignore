@@ -1,0 +1,9 @@
+sumathi-next/node_modules/
+sumathi-next/.next/
+sumathi-next/.env.local
+node_modules/
+.next/
+.env.local
+.DS_Store
+Thumbs.db
+docs/

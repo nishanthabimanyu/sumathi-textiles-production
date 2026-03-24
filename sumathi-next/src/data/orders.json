@@ -1,0 +1,32 @@
+[
+  {
+    "customer": {
+      "name": "Test User",
+      "email": "test@example.com",
+      "phone": "9876543210",
+      "address": "123 Loom Lane",
+      "city": "",
+      "postalCode": "",
+      "state": ""
+    },
+    "items": [
+      {
+        "id": 1,
+        "title": "Emerald Kanchipuram",
+        "price": 12499,
+        "qty": 1
+      },
+      {
+        "id": 4,
+        "title": "Velvet Heritage Set",
+        "price": 5400,
+        "qty": 1
+      }
+    ],
+    "total": 17899,
+    "paymentMethod": "Credit Card",
+    "id": "ORD-1774325102141-970",
+    "timestamp": "2026-03-24T04:05:02.141Z",
+    "status": "Shipped"
+  }
+]
