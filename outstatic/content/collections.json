@@ -4,5 +4,11 @@
     "slug": "products",
     "path": "outstatic/content/products",
     "children": []
+  },
+  {
+    "title": " festivals",
+    "slug": "festivals",
+    "path": "outstatic/content/festivals",
+    "children": []
   }
 ]
