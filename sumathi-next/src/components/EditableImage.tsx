@@ -49,7 +49,7 @@ export default function EditableImage({ src, onChange, className = '', children 
         </div>
       );
     }
-    return <img src={src} className={className} alt="" />;
+    return <img src={src} className={className.replace('bg-cover', 'object-cover').replace('bg-center', 'object-center')} alt="" />;
   }
 
   // Admin view

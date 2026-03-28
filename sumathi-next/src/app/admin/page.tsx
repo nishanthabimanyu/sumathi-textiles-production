@@ -56,12 +56,12 @@ export default function AdminPage() {
 
   if (authenticated) {
     if (typeof window !== 'undefined') {
-      window.location.href = '/';
+      window.location.href = '/admin/dashboard';
     }
     return (
       <div className="bg-earthy-brown text-creamy-ivory min-h-screen flex flex-col items-center justify-center font-serif italic gap-2">
         <span className="material-symbols-outlined text-4xl animate-spin text-bronze-metallic">sync</span>
-        Redirecting to Live Editor...
+        Redirecting to Admin Atelier...
       </div>
     );
   }

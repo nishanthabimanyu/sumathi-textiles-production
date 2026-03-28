@@ -9,6 +9,7 @@ import CheckoutFallback from "@/components/CheckoutFallback";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { getContent } from "@/lib/content.server";
+import { getDocuments } from "outstatic/server";
 
 interface PageProps {
   params: Promise<{
@@ -22,6 +23,23 @@ export default async function Page({ params }: PageProps) {
   
   const storyblokApi = getStoryblokApi();
   const content = getContent();
+
+  let outstaticProducts: any[] = [];
+  try {
+    outstaticProducts = getDocuments("products", ["title", "slug", "description", "coverImage", "price"]);
+  } catch (e) {}
+
+  const mappedProducts = outstaticProducts.map((p, index) => ({
+    id: index + 1000,
+    slug: p.slug,
+    title: p.title,
+    price: p.price ? parseInt(p.price) : 0,
+    desc: p.description,
+    localImg: p.coverImage,
+    hoverImg: p.coverImage,
+    isNew: true,
+    isBestseller: true,
+  }));
   
   let Component = (
     <main className="p-8 text-center text-red-500">
@@ -43,7 +61,7 @@ export default async function Page({ params }: PageProps) {
     );
   } catch (err) {
     if (slug === "home") {
-      Component = <HomeFallback content={content} />;
+      Component = <HomeFallback content={content} outstaticProducts={mappedProducts} />;
     } else if (slug === "sarees") {
       Component = <SareesFallback />;
     } else if (slug === "new-arrivals") {
