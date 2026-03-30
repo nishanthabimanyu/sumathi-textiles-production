@@ -1,10 +1,10 @@
 {
-  "commit": "",
-  "generated": "2026-03-30T14:08:17.867Z",
+  "commit": "90bb80125e799f01d20dc6c8800145e323477d3e",
+  "generated": "2026-03-30T14:10:11.917Z",
   "metadata": [
     {
       "__outstatic": {
-        "commit": "",
+        "commit": "90bb80125e799f01d20dc6c8800145e323477d3e",
         "hash": "2873476952",
         "path": "outstatic/content/_singletons/site-settings.mdx"
       },
