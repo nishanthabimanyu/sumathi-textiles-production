@@ -10,5 +10,11 @@
     "slug": "festivals",
     "path": "outstatic/content/festivals",
     "children": []
+  },
+  {
+    "title": "posts",
+    "slug": "posts",
+    "path": "outstatic/content/posts",
+    "children": []
   }
 ]
