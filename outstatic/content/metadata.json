@@ -1,0 +1,22 @@
+{
+  "commit": "",
+  "generated": "2026-03-30T14:08:17.867Z",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "",
+        "hash": "2873476952",
+        "path": "outstatic/content/_singletons/site-settings.mdx"
+      },
+      "author": {
+        "name": "Nishanth Abimanyu",
+        "picture": "https://avatars.githubusercontent.com/u/119790219?v=4"
+      },
+      "collection": "_singletons",
+      "publishedAt": "2026-03-30T14:39:54.524Z",
+      "slug": "site-settings",
+      "status": "draft",
+      "title": "site-settings"
+    }
+  ]
+}
